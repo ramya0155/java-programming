@@ -1,1 +1,12 @@
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        String a=in.nextLine();
+        System.out.println("Hai "+a+"!    Welcome to Programming Language...");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
