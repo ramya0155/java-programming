@@ -1,1 +1,23 @@
-time 24
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int h=in.nextInt();
+        int m=in.nextInt();
+        int s=in.nextInt();
+        m=m+(s/60);
+        s=s%60;
+        h=h+(m/60);
+        m=m%60;
+        System.out.println("Total Number of hours is "+h);
+        System.out.println("Total Number of minutes is "+m);
+        System.out.println("Total Number of seconds is "+s);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
