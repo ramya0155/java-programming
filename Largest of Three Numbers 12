@@ -1,1 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int a=in.nextInt();
+        int b=in.nextInt();
+        int c=in.nextInt();
+        if(a>b && a>c){
+            System.out.println("a is largest then b and c");
+        }
+        else if(b>a && b>c){
+            System.out.println("b is largest then a and c");
+        }
+        else{
+            System.out.println("c is largest then a and b");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
