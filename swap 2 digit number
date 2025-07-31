@@ -1,1 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int temp=in.nextInt();
+        while(temp>=100){
+            temp=temp/10;}
+        if(temp>=10 && temp<=99){
+        int f=temp/10;
+        int s=temp%10;
+        System.out.println(s*10+f);}
+        else{
+            System.out.println("STDOUT");}
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
