@@ -1,1 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int a=in.nextInt();
+        int temp=a;
+        int r,s=0;
+        while(a!=0){
+            r=a%10;
+            s=s+r;
+            a=a/10;}
+        if(temp%s==0){
+            System.out.println("Harshad Number");}
+        else{
+            System.out.println("Not Harshad Number");}
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
