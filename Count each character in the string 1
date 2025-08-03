@@ -1,1 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        String a=in.nextLine();
+        String result="";
+        char b;
+        int i;
+        for(i=0;i<a.length();i++){
+            b=a.charAt(i);
+             if (result.indexOf(b) != -1) {
+                continue;
+            }
+            int count=0,j;
+            for(j=i+1;j<a.length();j++){
+            if(b==a.charAt(j))
+                count++;
+                }
+           result += b;
+            System.out.println(b+"   "+(count+1));}
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
