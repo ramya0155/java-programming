@@ -1,1 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int a=in.nextInt();
+        int i,sum=0;
+        if(a>1 && a<=50){
+            for(i=1;i<=a;i++)
+                sum=sum+i;
+            System.out.printf("The sum of numbers from 1 to %d : %04d",a,sum);
+        }
+        else{
+            System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
