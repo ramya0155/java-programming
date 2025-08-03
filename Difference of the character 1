@@ -1,1 +1,32 @@
+import java.util.Scanner;
 
+public class Solution{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        String input = in.nextLine();
+
+        int star = 0, hash = 0;
+
+        for(int i = 0; i < input.length(); i++){
+            if(input.charAt(i) == '*'){
+                star++;
+            } else if(input.charAt(i) == '#'){
+                hash++;
+            }
+        }
+
+        int diff = star - hash;
+
+        if(diff == 0){
+            System.out.println("0");
+        } 
+        else{
+            int absDiff = Math.abs(diff);
+            String diffStr = "" + absDiff;
+            for(int i=0;i<3-absDiff;i++){
+                diffStr = "0" + diffStr;
+            }
+           System.out.println("The Difference of the character in the given string: " + diffStr);
+        }
+    }
+}
