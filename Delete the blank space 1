@@ -1,1 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        String a=in.nextLine();
+        char b;
+        int i;
+        for(i=0;i<a.length();i++){
+            b=a.charAt(i);
+            if(b!=' '){
+                System.out.print(b);
+            }
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
